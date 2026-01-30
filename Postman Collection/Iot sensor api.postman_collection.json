@@ -1,0 +1,63 @@
+{
+  "info": {
+    "_postman_id": "cfcfc8b4-9250-449f-89c5-b6b79f869eef",
+    "name": "Iot sensor api",
+    "description": "StartFragmentNode.js backend ingesting IoT temperature readingsEndFragment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41758915"
+  },
+  "item": [
+    {
+      "name": "Post device ingest",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deviceId\": \"sensor-01\",\r\n  \"temperature\": 27.9\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/sensor/ingest",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "sensor",
+            "ingest"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/sensor/sensor-01/latest",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "sensor",
+            "sensor-01",
+            "latest"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
