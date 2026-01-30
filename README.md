@@ -117,7 +117,7 @@ curl -X POST http://localhost:8000/api/sensor/ingest \
 
 ### 2. Get Latest Reading for a Device
 
-**GET /api/sensor/:deviceId/latest**
+**GET /api/sensor/<deviceId>/latest**
 
 Example:
 
