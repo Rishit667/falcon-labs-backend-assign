@@ -66,7 +66,7 @@ npm install
 
 3. Create a .env file
 MONGO_URI=your_mongodb_connection_string
-PORT=3000
+PORT=8000
 
 4. Start the server
 npm start
@@ -74,7 +74,7 @@ npm start
 
 Server will run at:
 
-http://localhost:3000
+http://localhost:8000
 
 ### MongoDB Atlas Setup (Quick Guide)
 ```
@@ -110,7 +110,7 @@ If timestamp is missing, server assigns Date.now().
 
 ### cURL Example
 ```
-curl -X POST http://localhost:3000/api/sensor/ingest \
+curl -X POST http://localhost:8000/api/sensor/ingest \
 -H "Content-Type: application/json" \
 -d '{"deviceId":"sensor-01","temperature":29.2}'
 ```
