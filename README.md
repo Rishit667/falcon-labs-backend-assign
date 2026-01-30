@@ -58,8 +58,8 @@ iot-publisher.js   // MQTT-based device simulator
 ## Installation & Setup
 ```
 1. Clone this repository
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Rishit667/falcon-labs-backend-assign.git
+cd falcon-labs-backend-assign
 
 2. Install dependencies
 npm install
