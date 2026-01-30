@@ -116,13 +116,13 @@ curl -X POST http://localhost:8000/api/sensor/ingest \
 ```
 
 ### 2. Get Latest Reading for a Device
-
-**GET /api/sensor/<deviceId>/latest**
-
+```
+GET /api/sensor/<deviceId>latest
+```
 Example:
-
-**GET /api/sensor/sensor-01/latest**
-
+```
+GET /api/sensor/sensor-01/latest
+```
 
 **Sample Response:**
 ```
@@ -137,9 +137,9 @@ Example:
 ## MQTT Subscriber (Bonus)
 
 The backend listens to MQTT messages published on:
-
+```
 iot/sensor/<deviceId>/temperature
-
+```
 
 Received messages are parsed and stored in MongoDB the same way as REST data.
 
